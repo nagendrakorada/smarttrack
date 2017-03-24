@@ -127,4 +127,5 @@ System.out.println("Equipment Type List: " +userList.get(0).getNAME());
 	}
 	*/
 	
+	
 }

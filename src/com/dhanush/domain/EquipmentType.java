@@ -9,7 +9,6 @@ public class EquipmentType {
 	private Date Date;
 	private String Mobility_Status;
 	
-	
 	public int getEquipment_Type_Id() {
 		return Equipment_Type_Id;
 	}

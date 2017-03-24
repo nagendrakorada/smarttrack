@@ -20,6 +20,4 @@ public class RegistrationRowMapper implements RowMapper<UserRegistration> {
 		RegistrationExtractor registration = new RegistrationExtractor();
 		return registration.extractData(resultSet);
 	}
-	
-
-}
+	}

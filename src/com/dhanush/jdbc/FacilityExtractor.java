@@ -27,4 +27,6 @@ public class FacilityExtractor implements ResultSetExtractor<EquipmentType> {
 		return Type;
 	}
 
+	
+	
 }

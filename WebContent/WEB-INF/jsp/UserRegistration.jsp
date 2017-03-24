@@ -23,7 +23,6 @@ body{
   -o-background-size: cover;*/
   background-size:400px;
   
-
 }
 
 .panel-default {

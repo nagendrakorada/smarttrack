@@ -14,7 +14,6 @@ public class FacilityRowMapper implements RowMapper<EquipmentType> {
 		FacilityExtractor facilityExtractor = new FacilityExtractor();
 		return facilityExtractor.extractData(resultSet);
 	}
-
 }
 
 

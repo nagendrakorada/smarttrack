@@ -14,5 +14,4 @@ public class UserRowMapper implements RowMapper<User> {
 		UserExtractor userExtractor = new UserExtractor();
 		return userExtractor.extractData(resultSet);
 	}
-
 }

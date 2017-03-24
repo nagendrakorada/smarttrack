@@ -23,9 +23,8 @@ body {
 	color: teal;
 	font-family: Calibri;
 	margin:0px;
+	}
 	
-}
-
 td {
 	font-size:15px;
 	font-style:bold;

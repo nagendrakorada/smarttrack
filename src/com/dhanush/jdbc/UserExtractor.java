@@ -18,6 +18,4 @@ public class UserExtractor implements ResultSetExtractor<User> {
 		user.setDescription(resultSet.getString(5));
 		user.setReg_No(resultSet.getInt(6));
 		return user;
-	}
-
-}
+	}}

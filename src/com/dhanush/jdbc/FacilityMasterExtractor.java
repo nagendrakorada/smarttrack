@@ -27,4 +27,7 @@ public class FacilityMasterExtractor implements ResultSetExtractor<Facility> {
 		
 		return Type;
 	}
+	
+	
+	
 }

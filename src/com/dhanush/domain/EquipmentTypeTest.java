@@ -15,9 +15,8 @@ public class EquipmentTypeTest {
 		card.setEquipment_Type_Id(10);
 		assertEquals("Equipment_Type_Id",10, card.getEquipment_Type_Id());		
 	}
-
-	@Test
-	public void testSetEquipment_Type_Id() {
+   @Test
+ 	public void testSetEquipment_Type_Id() {
 		card.setEquipment_Type_Id(10);
 		
 	}

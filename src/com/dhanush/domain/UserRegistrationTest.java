@@ -18,14 +18,12 @@ public class UserRegistrationTest {
  public void testSetUser_Id() {
   reg.setUser_Id("Rasmitha");
  }
-
- @Test
+@Test
  public void testGetPassword() {
   reg.setPassword("ras@123");
   assertEquals("Password","ras@123",reg.getPassword());
  }
-
- @Test
+@Test
  public void testSetPassword() {
   reg.setPassword("ras@123");
  }

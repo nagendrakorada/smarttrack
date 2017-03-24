@@ -71,6 +71,6 @@ public class UserServiceImpl implements UserService {
 	public List<UserRegistration> isValidUser(String Email_Id) {
 		// TODO Auto-generated method stub
 		return userdao.isValidUser(Email_Id);
-	}
+		}
 
 }

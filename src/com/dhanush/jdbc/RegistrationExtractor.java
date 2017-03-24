@@ -36,6 +36,9 @@ public class RegistrationExtractor implements ResultSetExtractor<UserRegistratio
 		registration.setEmail_Id(resultSet.getString(3));
 		registration.setMobile_No(resultSet.getString(4));
 		return registration;
-}
+
+	
+	
+	}
 
 }

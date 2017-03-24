@@ -16,8 +16,7 @@ public class FacilityTest {
 		assertEquals(0001,facility.getFaciltiy_id());
 		
 	}
-
-	@Test
+  @Test
 	public void testGetFaciltiy_Manager_id() {
 	facility.setFaciltiy_Manager_id(10001);
 	System.out.println(facility.getFaciltiy_Manager_id());

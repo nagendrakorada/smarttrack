@@ -46,12 +46,12 @@ public class UserDaoImpl implements UserDao {
 		//user.setEquipment_Type_Name("testOne");
 			
 		//JdbcTemplate jdbcTemplate = new JdbcTemplate(dataSource);
-
+System.out.println("jdbc template");
 		jdbcTemplate.update(
 				sql,
 				new Object[] { user.getEquipment_Id(),user.getEquipment_Type_Name(),user.getEquipment_Name(),
 						user.getS_NO(),user.getDescription(),user.getReg_No(),user.getStart_Date(),user.getEnd_Date(),user.getFacility_Name()});
-
+		System.out.println("insert test completed");
 	}
 
 	public List<User> getUserList() {
@@ -108,9 +108,7 @@ public class UserDaoImpl implements UserDao {
 		userList = jdbcTemplate.query(sql, new FacilityRowMapper());
 		System.out.println("userList: "+userList);
 		return userList;
-	}
-
-	
+	}	
 //method to insert data in to equipment master
 	/*@Override
 	public void insertEquipment(EquipmentMaster em) {
@@ -149,7 +147,7 @@ public class UserDaoImpl implements UserDao {
 
 	@Override
 	public void Registration(UserRegistration registration) {
-	
+	System.out.println("user insertdata");
 		String sql = "INSERT INTO Registration"
 				+ "( User_Id,Password,Email_Id,Mobile_No) VALUES (? , ? , ? , ?)";
 		
@@ -162,14 +160,15 @@ public class UserDaoImpl implements UserDao {
 				new Object[] { registration.getUser_Id(),registration.getPassword(),registration.getEmail_Id(),
 						registration.getMobile_No()});
 		
-		
+		System.out.println("user insertdata completed");
 	}
 
 	
 	@Override
 	public List<UserRegistration> isValidUser(String Email_Id) {
 
-List userList = new ArrayList();
+      List userList = new ArrayList();
+      System.out.println("userregisteration");
 		String sql = "select * from Registration where Email_Id = '"+Email_Id+"'";
 				//+ "? and password = ?";
 		//JdbcTemplate jdbcTemplate = new JdbcTemplate(dataSource);

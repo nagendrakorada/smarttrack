@@ -13,5 +13,4 @@ public class FacilityMasterRowMapper implements RowMapper<Facility> {
 		FacilityMasterExtractor facilityMasterExtractor = new FacilityMasterExtractor();
 		return facilityMasterExtractor.extractData(resultSet);
 	}
-
-}
+	}

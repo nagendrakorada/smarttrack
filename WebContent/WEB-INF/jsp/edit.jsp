@@ -87,8 +87,7 @@ td {
 					</tr>
 				</table>
 				<form:hidden path="userId" value="${map.user.userId}" />
-
-			</form:form>
+</form:form>
 		</div>
 	</center>
 </body>

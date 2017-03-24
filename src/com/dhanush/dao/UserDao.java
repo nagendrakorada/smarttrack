@@ -20,7 +20,4 @@ public interface UserDao {
 	public List<Facility> getFacilityMasterList();
     public void Registration(UserRegistration registartion);
     public List<UserRegistration> isValidUser(String Email_Id);
- 
-  
-
-}
+ }

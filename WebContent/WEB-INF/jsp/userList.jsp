@@ -133,8 +133,7 @@ $(document).ready(function () {
   </div>
   <br>
     
-  
-		<b>EQUIPMENT REGISTRATION </b> 
+  	<b>EQUIPMENT REGISTRATION </b> 
 			</div><br>
 			<div>
 			<div class="container" align="right" > 

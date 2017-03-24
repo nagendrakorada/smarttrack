@@ -23,8 +23,7 @@ public class UserTest {
 		user.setEquipment_Type_Name("Electrics");
 		assertTrue(user.getEquipment_Type_Name()=="Electrics");
 	}
-
-	@Test
+@Test
 	public void testSetEquipment_Type_Name() {
 		user.setEquipment_Type_Name("Electrics");
 	
