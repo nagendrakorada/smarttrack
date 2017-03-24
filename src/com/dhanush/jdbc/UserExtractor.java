@@ -13,15 +13,10 @@ public class UserExtractor implements ResultSetExtractor<User> {
 			DataAccessException {
 		
 		User user = new User();
-		
-		
-		
 		user.setEquipment_Name(resultSet.getString(3));
 		user.setS_NO(resultSet.getInt(4));
 		user.setDescription(resultSet.getString(5));
 		user.setReg_No(resultSet.getInt(6));
-	
-		
 		return user;
 	}
 
