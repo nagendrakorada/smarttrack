@@ -94,9 +94,35 @@ import com.dhanush.jdbc.UserRowMapper;
 	     public void testInsertData()
 	     {
 	    	 
-	    	 userdaoimpl.insertData(user);
+	    	 /*userdaoimpl.insertData(user);
 	    	 System.out.println("====");
-	    	 assertEquals("","");
+	    	 assertEquals("","");*/
+	    	 dataSource = new DriverManagerDataSource();
+	         System.out.println("connection Area");
+	     
+	     userdao = new UserDaoImpl(dataSource,jdbcTemplate);
+
+	      
+	        user = new User();
+	         Date d=new Date(2014/03/01);
+	         user.setEquipment_Id(101);
+	         user.setEquipment_Type_Name("ac");
+	         user.setEquipment_Name("Samsung Dao");
+	         user.setS_NO(10);
+	         user.setDescription("test");
+	         user.setReg_No(12);
+	         List userList = new ArrayList();
+	         userList.add("test");
+	         List userList1 = new ArrayList();
+	         user.setStart_Date(d);
+	         user.setEnd_Date(d);
+	         userdaoimpl.insertData(user);
+	         System.out.println(userList1);
+	         assertEquals("","");
+	         
+	        
+	           
+	         
 	     }
 	 }
 	 	
